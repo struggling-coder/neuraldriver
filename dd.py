@@ -3,7 +3,6 @@ from numpy.linalg import norm
 
 class DD(object):
 
-	l = 1
 	def __init__(self):
 		super(DD, self).__init__()
 		self.net = random.rand(2,2); l = 1

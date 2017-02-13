@@ -5,16 +5,16 @@ driver = DD()
 pulses = []; costs=[]
 
 while True:
-	command = raw_input("command: ")
+	command = raw_input("> ")
 
 	if command is "test":
 		hardware.test(verbose=True)
 
-	if command = "train":
+	if command is "train":
 		train()
 
 def train():
-	for j in range(0, raw_input("iterations: "))
+	for j in range(0, raw_input("iterations: ")):
 		for k in range(1, steps):
 			_in = hardware.sense()
 			_out = driver.forward(_in)
