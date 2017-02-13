@@ -8,7 +8,7 @@ while True:
 	command = raw_input("> ")
 
 	if command is "test":
-		hardware.test(verbose=True)
+		hardware.test(driver, verbose=True)
 
 	if command is "train":
 		train()

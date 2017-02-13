@@ -1,6 +1,9 @@
 import serial
 PORT = raw_input("port: ")
-#The Arduino sends no unsolicited data. LOL
+
+def test(driver, verbose=False):
+	"Sync driving (when training complete)"
+	pass
 
 def sense():
 	"Return 2-list of sensor difference at [L, R]"
