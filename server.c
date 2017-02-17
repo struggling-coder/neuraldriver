@@ -7,7 +7,6 @@
 #define pulsed 1000
 
 String req = "";
- 
 
 void setup()
 {
@@ -42,7 +41,6 @@ void loop()
 
 bool motor(bool fw, float dutyL, float dutyR)
 {
-
   if (fw) {
     analogWrite(ML, int(dutyL * 255));
     analogWrite(MR, int(dutyR * 255));
@@ -53,7 +51,7 @@ bool motor(bool fw, float dutyL, float dutyR)
     delay(pulsed);
     digitalWrite(ML, LOW);
     digitalWrite(MR, LOW);
-  }
+	}
   
   else {
     analogWrite(ML, int(dutyL * 255));
@@ -65,5 +63,5 @@ bool motor(bool fw, float dutyL, float dutyR)
     delay(pulsed);
     digitalWrite(ML, LOW);
     digitalWrite(MR, LOW);
-  }
+	}
 }
